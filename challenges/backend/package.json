@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "caronsale-coding-challenge-backend",
   "version": "1.0.0",
-  "description": "CarOnSale coding challenge",
+  "description": "CarOnSale Backend Coding Challenge",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/ts-node src/app/main.ts",

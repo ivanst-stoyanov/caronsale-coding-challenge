@@ -1,7 +1,7 @@
 import {Container} from "inversify";
 import {ILogger} from "./services/Logger/interface/ILogger";
 import {Logger} from "./services/Logger/classes/Logger";
-import {Application} from "./Application";
+import {AuctionMonitorApp} from "./AuctionMonitorApp";
 import {DependencyIdentifier} from "./DependencyIdentifiers";
 
 /*
@@ -20,9 +20,11 @@ container.bind<ILogger>(DependencyIdentifier.LOGGER).to(Logger);
 /*
  * Inject all dependencies in the application & retrieve application instance.
  */
-const app = container.resolve(Application);
+const app = container.resolve(AuctionMonitorApp);
 
 /*
  * Start the application
  */
-app.start();
+(async () => {
+    await app.start();
+})();

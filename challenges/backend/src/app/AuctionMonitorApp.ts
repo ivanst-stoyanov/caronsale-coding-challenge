@@ -4,15 +4,16 @@ import {DependencyIdentifier} from "./DependencyIdentifiers";
 import "reflect-metadata";
 
 @injectable()
-export class Application {
+export class AuctionMonitorApp {
 
     public constructor(@inject(DependencyIdentifier.LOGGER) private logger: ILogger) {
-        // TODO
     }
 
-    public start() {
+    public async start(): Promise<void> {
 
-        this.logger.log(`Application started.`);
+        this.logger.log(`Auction Monitor started.`);
+
+        // TODO: Retrieve auctions and display aggregated information (see README.md)
 
     }
 
