@@ -6,7 +6,7 @@ In the `/src/app` directory, you find a typescript interface `ICarOnSaleClient` 
 Please implement the service and use the "salesman" (buyer) user with the mail ID "salesman@random.com" and the credentials (password) "123test".
 
 The API is documented here: https://caronsale-backend-service-dev.herokuapp.com/swagger/#/
-For instructions on how to hash the authentication token, see ``src/assets/how-to-hash-password.png``.
+For instructions on how to hash the authentication token, see ``challenges/assets/how-to-hash-password.png``.
 
 Please fulfill the following tasks (according to the description above):
 
