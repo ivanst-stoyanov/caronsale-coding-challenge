@@ -1,0 +1,42 @@
+import { IVehicle, IFile } from ".";
+
+export interface IAuction {
+    id?: number;
+    label?: string;
+    state?: string;
+    endingTime?: Date;
+    remainingTimeInSeconds?: number;
+    createdAt?: Date;
+    startedAt?: Date;
+    paymentDueDate?: Date;
+    pickupDueDate?: Date;
+    purchaseConfirmedAt?: Date;
+    outgoingPaymentConfirmedAt?: Date;
+    incomingPaymentConfirmedAt?: Date;
+    pickupConfirmedAt?: Date;
+    locationCountry?: string;
+    locationAddress?: string;
+    locationCity?: string;
+    locationZip?: string;
+    minimumRequiredAsk?: number;
+    originalMinimumRequiredAsk?: number;
+    purchasePrice?: number;
+    currentHighestBidValue?: number;
+    numBids?: number;
+    associatedVehicle?: IVehicle;
+    isRatedByDealership?: boolean;
+    isRatedByBuyer?: boolean;
+    isPaidByBuyer?: boolean;
+    attachments?: IFile[];
+    hotBid?: boolean;
+    instantPurchasePrice?: number;
+    allowInstantPurchase?: boolean;
+    didEndWithInstantPurchase?: boolean;
+    instantPurchasePossibleUntil?: string;
+    auctioningIterations?: number;
+    priority?: number;
+    advertisementHtmlContent?: string;
+    _fk_associatedVehicle?: number;
+    _fk_associatedDealershipUser?: number;
+    _fk_highestBiddingSalesmanUser?: number;
+}
